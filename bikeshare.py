@@ -1,3 +1,5 @@
+# This project was developed by Erdem Dogan
+
 import time
 import pandas as pd
 import numpy as np
