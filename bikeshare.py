@@ -190,7 +190,7 @@ def display_data(df,city):
     # If user want to visualize raw data,it will display 5 lines of raw data and then ask the user same question.
     while True:
 
-        raw_data_request = input("Do you want to visualize raw data ? (Yes or No): ").lower()
+        raw_data_request = input("Do you want to visualize raw data ? (YES or NO): ").lower()
         if raw_data_request == 'yes' :
             print(df.iloc[ index_df : index_df+5 , 1 : end_column ])
             index_df += 5
@@ -198,7 +198,7 @@ def display_data(df,city):
         elif raw_data_request == 'no' :
             break
         else :
-            print("\nPlease type 'Yes' or 'No'.\n")
+            print("\nPlease type 'YES' or 'NO'.\n")
             
     
 def main():
@@ -211,7 +211,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df,city)
         display_data(df,city)
-        restart = input('\nWould you like to restart? Type yes or no.\n')
+        restart = input('\nWould you like to restart? Type YES or NO.\n')
         if restart.lower() != 'yes':
             break
 
